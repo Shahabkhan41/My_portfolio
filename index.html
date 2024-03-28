@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
 </head>
+
 <body>
     <pre>                                                                                <b>   <a href="./project.html">PROJECTS</a>    <a href="./contact.html">CONTACT</a>   <a href="./skills.html"> SKILLS</a>     <a href="./table.html">TABLE</a>    <a href="./Form.html">FORM</a> </b> </pre>
     
     <img src="images/shahab pic.png" alt="My Pic" width="300px"><br>
-    <h1>SHAHAB</h1>
+
+
+
+<!-- title or intro or bio-->
+<div>
+    <h2 style="color: black; margin-left: 60px; font-size: 40px; "> SHAHAB 
+    <img id="speaker" src="./images/speaker.png" height="30px" alt="Speaker Icon"></h2>
+    </div>
+
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officia <br> blanditiis ratione. Vitae nostrum dolore eligendi saepe facilis alias<br> doloribus rem ipsa, sapiente laudantium, culpa nihil. Deleniti nobis inventore distinctio.</p>
     <br><br>
 <ul>
@@ -25,8 +35,15 @@
         
     </dt>
 
+<!-- java script for audio -->
 
-
+<script>
+    var audio = new Audio("./voice/name.mp3");
+    function playAudio() {
+    audio.play();
+    }
+    document.getElementById("speaker").addEventListener("click", playAudio);
+    </script>
 
 
 
